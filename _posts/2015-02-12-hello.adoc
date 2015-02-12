@@ -2,3 +2,5 @@
 
 
 welcome 
+
+:hp-image: http://www.timelinecoverhd.com/covers-images/download/Pirate-Flag-Facebook-Timeline-Cover-HD.jpg

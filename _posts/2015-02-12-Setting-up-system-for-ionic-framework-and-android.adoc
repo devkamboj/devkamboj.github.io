@@ -1,13 +1,13 @@
 = Setting up system for ionic framework and android !
 
 
-welcome 
+
 
 :hp-image: http://www.timelinecoverhd.com/covers-images/download/Pirate-Flag-Facebook-Timeline-Cover-HD.jpg
 
 It will cover, step by step, everything you need to do to create a working Ionic framework project
 
-= Preparations
+== Preparations
 
 1. Install Apache Ant
 2. Install nodeJS
@@ -33,6 +33,80 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg[]
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg[]
 
+
 2. Install nodeJS
 
-before ionic we need link:http://nodejs.org/download/[nodeJS] 
+before ionic we need link:http://nodejs.org/download/[nodeJS] installed.
+Download link:
+http://nodejs.org/download/
+
+3. Install Ionic && Cordova
+
+Now let’s install Ionic and Cordova. Open windows command prompt and enter this:
+
+npm install -g cordova ionic
+
+image::http://i.ytimg.com/vi/88_b_TpZvnA/maxresdefault.jpg[]
+
+4. Install Java JDK
+
+link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[java JDK Download]
+
+Install it where ever you want, just remember its location. For example, it should look like this: C:\Program Files\Java\jdk1.8.0_25\
+ 
+Create a new environment variable (into System variables) called JAVA_HOME and add a location to your JAVA installation folder. Then add it to the environment PATH, looking like this: C:\Program Files\Java\jdk1.8.0_25\bin:
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1004.jpg[]
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1005.jpg[]
+
+5. Install Android SDK
+ 
+Go to the official Android SDK site:
+Link:http://developer.android.com/sdk/index.html[Android SDK]
+
+You can choose “Download Android Studio” if you wish a full package or you can scroll a bit until you see: Other Download Options -> SDK Tools Only. Here you can download SDK only, just select Windows installer package and initiate download/installation. In this case will we download full Android Studio. Start SDK Android Studio installation.
+
+Go to Android Studio installation folder, like this one: C:\Program Files\Android\Android Studio\bin\ and create a desktop shortcut (if you are using 32bit Windows use studio.exe or studio64.exe in case of 64bit Windows). Do this step only if installation didn’t do that automatically.
+ 
+Open Android Studio (this part will fail if you don’t have installed JAVA SDK also it will take some time for it to open for the first time, ). Click Create New Project, and click Next several times. When Android Studio opens, go to toolbar and click Tools -> Android -> SDK Manager. When you open the SDK Manager for the first time, several packages are selected by default. Leave these selected, but be sure you have everything you need to get started by following these steps (don’t select Android 3.X or anything lower than 2.3.3 because Cordova don’t support them).
+
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1006.jpg[]
+
+Once you’ve selected all the desired packages, continue to install, click Install X packages. In the next window, double-click each package name on the left to accept the license agreement for each. Click Install. The download progress is shown at the bottom of the SDK Manager window. Do not exit the SDK Manager or it will cancel the download. You will probably need to do this 3-4x times (some sections have dependencies and installer is not smart enough to install then in the right order).
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1007.jpg[]
+
+When everything is done, your Android SDK should be installed somewhere like this:
+ 
+C:\Users\Gajotres\AppData\Local\Android\sdk
+ 
+in your case, it will be:
+ 
+C:\Users\{USER}\AppData\Local\Android\sdk
+ 
+Create new environment variable called ANDROID_HOME and add previously mentioned link. Now add two additional environment PATH locations %ANDROID_HOME%\platform-tools; and %ANDROID_HOME%\tools;. Everything should look like this:
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1011.jpg[]
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1013.jpg[]
+
+6. Create, Test, and Delete a demo Ionic application
+ 
+Select any folder you wish to store your project(s) in, we will use it for our Ionic project(s). Open new command prompt window, go to this newly created folder and execute this:
+ 
+ionic start myDemoApp tabs
+ 
+This command will create new Ionic project from a tabs template.
+Let’s proceed, next few lines will create, build, and run our demo Android project:
+
+ionic platform add android
+
+Next part will fail if you didn’t install ANT during our first step.
+ 
+ionic build android
+
+Last step will start Android emulator.
+ 
+ionic emulate android
+

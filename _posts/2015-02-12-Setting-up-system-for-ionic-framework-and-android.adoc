@@ -1,0 +1,32 @@
+= Setting up system for ionic framework and android !
+
+
+welcome 
+
+:hp-image: http://www.timelinecoverhd.com/covers-images/download/Pirate-Flag-Facebook-Timeline-Cover-HD.jpg
+
+It will cover, step by step, everything you need to do to create a working Ionic framework project
+
+= Preparations
+
+1. Install Apache Ant
+2. Install nodeJS
+3. Install Ionic && Cordova
+4. Install Java JDK
+5. Install Android SDK
+6. Create, Test, and Delete a demo Ionic application
+7. Let’s create our own application
+
+
+1. Install Apache Ant
+ 
+Go to the official Apache Ant site and download latest version, or any other if you don’t like to use newer versions. 
+Download link:
+http://ant.apache.org/bindownload.cgi
+
+
+Create a new ANT directory (where ever you prefer) and unpack a downloaded archive. It should look something like this: D:\JavaScript\ANT\apache-ant-1.9.2
+ 
+Use this location and create a new environment variable called ANT_HOME, also use this variable and add it to your environment PATH like this: %ANT_HOME%\bin.
+
+image::sunset.jpg[Sunset, 400, 450, link="http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg"]

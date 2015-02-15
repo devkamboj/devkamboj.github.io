@@ -31,8 +31,8 @@ Use this location and create a new environment variable called ANT_HOME, also us
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg[]
 
-image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg[]
 
-2. Install nodeJS
+2.Install nodeJS    
 
- To start with ionic, first we need link:http://nodejs.org/download/[nodeJS]
+ to start with ionic, first we need link:http://nodejs.org/download/[nodeJS]

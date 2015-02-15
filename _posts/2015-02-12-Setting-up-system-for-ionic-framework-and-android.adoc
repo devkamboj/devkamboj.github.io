@@ -29,4 +29,10 @@ Create a new ANT directory (where ever you prefer) and unpack a downloaded archi
  
 Use this location and create a new environment variable called ANT_HOME, also use this variable and add it to your environment PATH like this: %ANT_HOME%\bin.
 
-image::sunset.jpg[ant, 300, 200, link="http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg"]
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg[]
+
+image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg
+
+2. Install nodeJS
+
+ To start with ionic, first we need link:http://nodejs.org/download/[nodeJS]

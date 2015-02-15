@@ -33,6 +33,6 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg[]
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg[]
 
-2.Install nodeJS    
+2. Install nodeJS
 
- to start with ionic, first we need link:http://nodejs.org/download/[nodeJS]
+before ionic we need link:http://nodejs.org/download/[nodeJS] 

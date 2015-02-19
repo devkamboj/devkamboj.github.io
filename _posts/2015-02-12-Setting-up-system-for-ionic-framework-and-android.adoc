@@ -3,7 +3,7 @@
 
 
 
-:hp-image: http://www.timelinecoverhd.com/covers-images/download/Pirate-Flag-Facebook-Timeline-Cover-HD.jpg
+:hp-image: http://learn.ionicframework.com/img/learn-ionicframework@2x.png
 
 It will cover, step by step, everything you need to do to create a working Ionic framework project
 

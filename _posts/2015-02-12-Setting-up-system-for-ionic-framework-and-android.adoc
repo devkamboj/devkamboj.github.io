@@ -3,7 +3,7 @@
 
 
 
-:hp-image: http://learn.ionicframework.com/img/learn-ionicframework@2x.png
+:hp-image: http://nextflow.in.th/wp-content/uploads/2014/07/Ionic-framework-tutorial-by-nextflow.png
 
 It will cover, step by step, everything you need to do to create a working Ionic framework project
 

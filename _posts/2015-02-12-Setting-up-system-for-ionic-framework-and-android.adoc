@@ -20,7 +20,7 @@ It will cover, step by step, everything you need to do to create a working Ionic
 
 === 1. Install Apache Ant
  
-Go  to the official Apache Ant site and download latest version, or any other if you don’t like to use newer versions. 
+Go  to the official Apache Ant site and download latest version.
 Download link:
 http://ant.apache.org/bindownload.cgi
 

@@ -15,12 +15,12 @@ It will cover, step by step, everything you need to do to create a working Ionic
 4. Install Java JDK
 5. Install Android SDK
 6. Create, Test, and Delete a demo Ionic application
-7. Let’s create our own application
 
 
-1 Install Apache Ant
+
+=== 1. Install Apache Ant
  
-Go to the official Apache Ant site and download latest version, or any other if you don’t like to use newer versions. 
+Go  to the official Apache Ant site and download latest version, or any other if you don’t like to use newer versions. 
 Download link:
 http://ant.apache.org/bindownload.cgi
 
@@ -34,13 +34,13 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1014.jpg[]
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg[]
 
 
-2. Install nodeJS
+== 2. Install nodeJS
 
 before ionic we need link:http://nodejs.org/download/[nodeJS] installed.
 Download link:
 http://nodejs.org/download/
 
-3. Install Ionic && Cordova
+== 3. Install Ionic && Cordova
 
 Now let’s install Ionic and Cordova. Open windows command prompt and enter this:
 
@@ -48,7 +48,7 @@ npm install -g cordova ionic
 
 image::http://i.ytimg.com/vi/88_b_TpZvnA/maxresdefault.jpg[]
 
-4. Install Java JDK
+== 4. Install Java JDK
 
 link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[java JDK Download]
 
@@ -59,7 +59,7 @@ Create a new environment variable (into System variables) called JAVA_HOME and a
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1004.jpg[]
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1005.jpg[]
 
-5. Install Android SDK
+== 5. Install Android SDK
  
 Go to the official Android SDK site:
 Link:http://developer.android.com/sdk/index.html[Android SDK]
@@ -91,7 +91,7 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1011.jpg[]
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1013.jpg[]
 
-6. Create, Test, and Delete a demo Ionic application
+== 6. Create, Test, and Delete a demo Ionic application
  
 Select any folder you wish to store your project(s) in, we will use it for our Ionic project(s). Open new command prompt window, go to this newly created folder and execute this:
  

@@ -18,7 +18,7 @@ It will cover, step by step, everything you need to do to create a working Ionic
 7. Let’s create our own application
 
 
-1. Install Apache Ant
+1 Install Apache Ant
  
 Go to the official Apache Ant site and download latest version, or any other if you don’t like to use newer versions. 
 Download link:

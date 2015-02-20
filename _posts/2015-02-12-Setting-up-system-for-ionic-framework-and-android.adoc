@@ -36,13 +36,13 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1015.jpg[]
 
 == 2. Install nodeJS
 
-before ionic we need link:http://nodejs.org/download/[nodeJS] installed.
+Before installing ionic we need to insatll  link:http://nodejs.org/download/[nodeJS] .
 Download link:
 http://nodejs.org/download/
 
 == 3. Install Ionic && Cordova
 
-Now let’s install Ionic and Cordova. Open windows command prompt and enter this:
+Now let’s install Ionic and Cordova. Open windows command prompt and run this command:
 
 npm install -g cordova ionic
 
@@ -52,9 +52,9 @@ image::http://i.ytimg.com/vi/88_b_TpZvnA/maxresdefault.jpg[]
 
 link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[java JDK Download]
 
-Install it where ever you want, just remember its location. For example, it should look like this: C:\Program Files\Java\jdk1.8.0_25\
+Install it where ever you want, just remember its location. For example,  "C:\Program Files\Java\jdk1.8.0_25\"
  
-Create a new environment variable (into System variables) called JAVA_HOME and add a location to your JAVA installation folder. Then add it to the environment PATH, looking like this: C:\Program Files\Java\jdk1.8.0_25\bin:
+Create a new environment variable (into System variables) called JAVA_HOME and add a location to your JAVA installation folder. Then add it to the environment PATH,which looks like this: C:\Program Files\Java\jdk1.8.0_25\bin:
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1004.jpg[]
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1005.jpg[]
@@ -64,16 +64,16 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1005.jpg[]
 Go to the official Android SDK site:
 Link:http://developer.android.com/sdk/index.html[Android SDK]
 
-You can choose “Download Android Studio” if you wish a full package or you can scroll a bit until you see: Other Download Options -> SDK Tools Only. Here you can download SDK only, just select Windows installer package and initiate download/installation. In this case will we download full Android Studio. Start SDK Android Studio installation.
+You can choose “Download Android Studio” if you wish a full package or you can scroll a bit until you see: Other Download Options -> SDK Tools Only. Here you can download SDK only, just select Windows installer package and initiate download/installation. In this case we will download full Android Studio. Start SDK Android Studio installation.
 
-Go to Android Studio installation folder, like this one: C:\Program Files\Android\Android Studio\bin\ and create a desktop shortcut (if you are using 32bit Windows use studio.exe or studio64.exe in case of 64bit Windows). Do this step only if installation didn’t do that automatically.
+Go to Android Studio installation folder, like this one: C:\Program Files\Android\Android Studio\bin\ and create a desktop shortcut (if you are using 32bit Windows use studio.exe or in case of 64bit Windows use studio64.exe).
  
-Open Android Studio (this part will fail if you don’t have installed JAVA SDK also it will take some time for it to open for the first time, ). Click Create New Project, and click Next several times. When Android Studio opens, go to toolbar and click Tools -> Android -> SDK Manager. When you open the SDK Manager for the first time, several packages are selected by default. Leave these selected, but be sure you have everything you need to get started by following these steps (don’t select Android 3.X or anything lower than 2.3.3 because Cordova don’t support them).
+Open Android Studio (this part will fail if you don’t have installed JAVA SDK also it will take some time for it to open for the first time, ). Click Create New Project. When Android Studio opens, go to toolbar and click Tools -> Android -> SDK Manager. When you open the SDK Manager for the first time, several packages are selected by default. Leave these selected, but be sure you have everything you need to get started by following these steps (don’t select Android 3.X or anything lower than 2.3.3 because Cordova don’t support them).
 
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1006.jpg[]
 
-Once you’ve selected all the desired packages, continue to install, click Install X packages. In the next window, double-click each package name on the left to accept the license agreement for each. Click Install. The download progress is shown at the bottom of the SDK Manager window. Do not exit the SDK Manager or it will cancel the download. You will probably need to do this 3-4x times (some sections have dependencies and installer is not smart enough to install then in the right order).
+Once you’ve selected all the desired packages, continue to install. In the next window, double-click each package name on the left to accept the license agreement for each. Click Install. The download progress is shown at the bottom of the SDK Manager window. Do not exit the SDK Manager or it will cancel the download. 
 
 image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1007.jpg[]
 
@@ -93,7 +93,7 @@ image::http://www.gajotres.net/wp-content/uploads/2014/12/ionic-tut-1013.jpg[]
 
 == 6. Create, Test, and Delete a demo Ionic application
  
-Select any folder you wish to store your project(s) in, we will use it for our Ionic project(s). Open new command prompt window, go to this newly created folder and execute this:
+Select any folder you wish to store your project(s) in, we will use it for our Ionic project(s). Open new command prompt window, go to this newly created folder and execute this command:
  
 ionic start myDemoApp tabs
  

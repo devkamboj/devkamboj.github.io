@@ -1,0 +1,60 @@
+= Communicating with the backend using $http service in Angularjs
+
+:hp-image: http://jharaphula.com/wp-content/uploads/2014/06/AngularJS_logo.png
+
+Now days,every client-side JavaScript application needs to communicate with the backend.RESTful services are consumed using standard asynchronous HTTP requests, and the $http 
+service provides all of the features that are required to bring the data into the application and write changes to the 
+server.
+
+The $http service is a function that takes a single argument: a configuration object that is used to
+generate a HTTP request. The function returns a promise that has two helper methods: success and
+error.
+----
+The most basic usage of the $http looks like:
+$http({
+method: 'GET',
+url: '/api/users.json'
+}).success(function(data, status, headers, config) {
+  // This is called when the response is
+  // ready
+}).error(function(data, status, headers, config) {
+  // This is called when the response
+  // comes back with an error status
+});
+----
+
+
+----
+$http.get('http://rest-service.guides.spring.io/greeting').
+        success(function(data) {
+            $scope.greeting = data;
+        });
+}
+----
+
+If successful, it will assign the JSON returned back from the service to $scope.greeting.
+
+*Complete list of Other methods:*
+
+* $http.head
+* $http.post
+* $http.put
+* $http.delete
+* $http.jsonp
+* $http.patch
+
+
+=== Caching HTTP Requests
+By default, the $http service does not cache requests in a local cache. We can enable caching per
+request by passing either a boolean or a cache instance in our $http requests
+
+----
+$http.get('/api/cars.json', { cache: true })
+.success(function(data) {})
+.error(function(data) {});
+----
+
+The first time that we send this $http request, the $http service will send a GET request to
+/api/carss.json. The next time that we send this GET request, instead of making the HTTP GET
+request, it will pull the request out of the cache.
+

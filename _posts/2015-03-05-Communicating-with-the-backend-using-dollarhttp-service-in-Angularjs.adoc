@@ -55,6 +55,6 @@ $http.get('/api/cars.json', { cache: true })
 ----
 
 The first time that we send this $http request, the $http service will send a GET request to
-/api/carss.json. The next time that we send this GET request, instead of making the HTTP GET
+/api/cars.json. The next time that we send this GET request, instead of making the HTTP GET
 request, it will pull the request out of the cache.
 

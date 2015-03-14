@@ -1,0 +1,55 @@
+= Using the Filter in Angularjs
+
+Filter provide the way to format the data.The same data can be displayed in different ways.Filter are very useful when to format dates and the currency according to our current locale.
+
+=== How to use filter
+
+To make filters interact with the expression, we just need to put them inside double 
+curly brackets:
+{{expression | filter}}
+
+Angularjs has built in filter
+
+ * Currency 
+ 
+ * Date
+ 
+ * Lowercase 
+ 
+ * Uppercase, etc
+ 
+ 
+==== currency
+The currency filter is used to format a number based on a currency. The basic usage 
+of this filter is without any parameter:
+----
+{{ 10 | currency}}
+----
+The result of the evaluation will be the number $10.00, formatted and prefixed with 
+the dollar sign. We can also apply a specific locale symbol, shown as follows:
+----
+{{ 10 | currency:'Rs '}}
+----
+Now, the output will be Rs 10.00, which is the same as the previous output but 
+prefixed with a different symbol.
+
+image::http://www.knwldg.tv/wp-content/uploads/2013/05/2013-05-15_1513.gif[]
+
+
+==== date
+
+The date filter is one of the most useful filters of the framework. 
+Basically, we can use this filter by declaring it inside any expression. In the following 
+example, we have used the filter on a date variable attached to the scope:
+----
+{{ car.entrance | date }}
+----
+
+
+The output will be Dec 10, 2013. However, there are numerous combinations we 
+can make with the optional format mask:
+{{ car.entrance | date:'MMMM dd/MM/yyyy HH:mm:ss' }}
+When you use this format, the output changes to December 10/12/2013 21:42:10
+
+ 
+

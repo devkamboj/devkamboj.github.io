@@ -1,13 +1,13 @@
 = Json web Token (JWT)
 
-  JSON Web Token (JWT) is used to generate auth tokens.These token can be use by web or mobile app.This is the secure way to transmitting information between client and server as a JSON object.
+JSON Web Token (JWT) is used to generate auth tokens.These token can be use by web or mobile app.This is the secure way to transmitting information between client and server as a JSON object.
  
- Http is stateless protocol so that every time we need to tell server we are logged in.we can use “session” cookies for authenticated/authorized.But JWT performance is better than “session” cookies.because now Server doesn’t need to ask Database to know who the user is because the user info is inside the token itself!
+Http is stateless protocol so that every time we need to tell server we are logged in.we can use “session” cookies for authenticated/authorized.But JWT performance is better than “session” cookies.because now Server doesn’t need to ask Database to know who the user is because the user info is inside the token itself!
  
  
 === JWT Structure
 
- There are 3 parts of a token: <header>.<payload>.<signature>
+There are 3 parts of a token: <header>.<payload>.<signature>
 
 1. Header: A JSON(Base64 encoded) is has infomrtaion about algorithm used(like HS256, RSA) and so on.
 2. Payload: A JSON(Base64 encoded). In this we can put information about the user or other information that we want to store in token.
@@ -20,11 +20,9 @@ image::https://assets.toptal.io/uploads/blog/image/956/toptal-blog-image-1426676
 image::https://cdn.auth0.com/blog/legacy-app-auth/legacy-app-auth-5.png[]
 
 
-  we can verify the signature by using the secret.by decoding the token we can get that payload data.
+we can verify the signature by using the secret.by decoding the token we can get that payload data.
   
 === JWT Token Implementation 
- There are two parts
- 1. Generate JWT token and return it to the client
- 2. Verify JWT token for all in future requests.
+
 
 image::http://www.techartifact.com/blogs/wp-content/uploads/2016/02/JWT-Real-world.png[]

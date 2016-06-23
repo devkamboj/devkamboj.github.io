@@ -1,6 +1,6 @@
 = Using the Filter in Angularjs
 
-Filter provide the way to format the data.The same data can be displayed in different ways.Filter are very useful when to format dates and the currency according to our current locale.
+Filter provide the way to format the data.Same data can be displayed in different ways.Filter are very useful when to format dates and the currency according to our current locale.
 
 === How to use filter
 

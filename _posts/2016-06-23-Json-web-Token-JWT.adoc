@@ -1,6 +1,6 @@
 = Json web Token (JWT)
 
-JSON Web Token (JWT) is used to generate auth tokens.These token can be use by web or mobile app.This is the secure way to transmitting information between client and server as a JSON object.
+  JSON Web Token (JWT) is used to generate auth tokens.These token can be use by web or mobile app.This is the secure way to transmitting information between client and server as a JSON object.
  
  Http is stateless protocol so that every time we need to tell server we are logged in.we can use “session” cookies for authenticated/authorized.But JWT performance is better than “session” cookies.because now Server doesn’t need to ask Database to know who the user is because the user info is inside the token itself!
  
